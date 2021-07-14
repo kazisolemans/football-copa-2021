@@ -23,7 +23,7 @@ nav{
 }
 
 header{
-    padding: 0 30px;
+    padding: 50px 50px;
     background-color: rgb(45, 37, 160);
 }
 
@@ -31,6 +31,19 @@ header{
     display: flex;
     align-items: center;
 
+}
+
+.responsive-menu {
+    background: #fff;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.responsive-menu img{
+    width: 130px;
+    margin-left: -128px;
 }
 
 .menu-left{
@@ -41,6 +54,17 @@ header{
 .menu-right{
     width:30%;
     text-align: right;
+}
+
+.menu-right i.mobile{
+    color: blueviolet;
+    font-size: 32px;
+    margin-right: 30px;
+    transition: all linear .5s;
+}
+
+.menu-right i.mobile:hover{
+    transform: rotate(90deg);
 }
 
 .navbar ul{
@@ -70,7 +94,7 @@ header{
     text-align: right;
 }
 
-.navbar .logout.menu-right a i{
+.navbar .logout.menu-right a i.log{
     color: #fff;
     margin-right: 5px;
 }
@@ -118,37 +142,27 @@ header{
     width: 556px;
 }
 
-@media (max-width:613px) {
-    .banner .container{
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        /* max-width: 1080px; */
-    }
-    .banner .container h2{
-        font-size: 20px;
-        font-weight: 700;
-    }
-}
 
-    /* .banner .container img{
-        width: 300px; */
-}
-
-/* .banner .container button.btn{
-    
-} */
-
-.banner .container .btn a {
+.banner .container a.btn {
     font-size: 16px;
     color: #fff;
     margin-right: 8px;
     padding: 8px 25px;
-    background-color: #E02C6D;
-    border: 3px solid yellow;
+    background:linear-gradient(to right, #E02C6D, #e04141);
+    transition: all linear .5s;
 }
 
 .banner .container .btn i{
     margin-left: 8px;
+}
+
+.banner .container .btn span{
+    color: #fff;
+    transition: all linear .5s;
+}
+
+.banner .container a.btn:hover span{
+    margin-right: 12px;
 }
 
 /* Gallery Parts CSS Start  */
@@ -163,14 +177,6 @@ header{
     font-size: 40px;
 }
 
-@media (max-width:613px) {
-    .gallery .gallery-desc h2{
-        font-size: 20px;
-    }
-    .gallery .gallery-desc p{
-        font-size: 10px;
-    }
-}
 
 .gallery .gallery-desc p{
     color: rgb(116, 57, 172);
@@ -185,13 +191,6 @@ header{
 .player-gallery{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-}
-
-@media (max-width:613px) {
-    .player-gallery{
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-    }
 }
 
 .gallery .player{
@@ -223,9 +222,17 @@ header{
     color: #6C6C6C;
 }
 
+/* HighLights Part Start  */
+
 .higlights {
     display: flex;
     justify-content: center;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.higlights .highlights-left{
+    padding: 0 20px;
 }
 
 .higlights .container{
@@ -239,20 +246,51 @@ header{
     font-weight: 700;
 }
 
-.higlights .container p{
+.higlights .container p {
     font-size: 16px;
     color: #6C6C6C;
     font-weight: 400;
+    margin-top: -12px;
+    text-align: justify;
+}
+
+.higlights .container a.btn {
+    font-size: 16px;
+    color: #fff;
+    margin-right: 8px;
+    padding: 8px 25px;
+    background:linear-gradient(to right, #E02C6D, #e04141);
+    transition: all linear .5s;
+}
+
+.higlights .container a.btn i{
+    margin-left: 8px;
+}
+
+.higlights .container a.btn span{
+    color: #fff;
+    transition: all linear .5s;
+}
+
+.higlights .container a.btn:hover span{
+    margin-right: 12px;
+}
+
+.higlights .highlights-right {
+    padding: 6px 10px;
 }
 
 .higlights .highlights-right img{
-    width: 450px;
+    width: 95%;
 }
 
 /* Sponsor Parts CSS Starts  */
 
 .sponsors{
     text-align: center;
+    background: rgba(211, 211, 211, 0.308);
+    padding-top: 20px ;
+    padding-bottom: 50px;
 }
 
 .container-sponsor {
@@ -271,6 +309,8 @@ header{
 }
 
 .container-sponsor .sponsor2 img{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
     margin: 0 5px;
 }
 
@@ -462,9 +502,9 @@ footer{
 }
 
 .footer-part i{
-    font-size: 32px;
+    font-size: 25px;
     color: #969BAB;
-    margin-right: 15px;
+    margin-right: 20 px;
 }
 
 .footer-part i.fa-facebook-f:hover {
@@ -485,6 +525,13 @@ footer{
 .footer-part i.fa-youtube:hover{
     color: #c4302b;
     transition: linear .4s;
+}
+
+
+
+.footer-part p{
+    ]font-size: 18px;
+    color: #000;
 }
 
 .copy{
