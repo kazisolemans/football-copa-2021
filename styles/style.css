@@ -129,7 +129,7 @@ header{
 
 .banner .container{
     display: flex;
-    justify-content: center;
+    width: 920 px;
     /* max-width: 1080px; */
 }
 
@@ -140,7 +140,7 @@ header{
 }
 
 .banner .container img{
-    width: 556px;
+    width: 450px;
 }
 
 
@@ -203,6 +203,10 @@ header{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+.player-photo{
+    overflow: hidden;
+}
+
 .gallery .player img{
     width: 100%;
     transition: all linear .5s;
@@ -239,6 +243,7 @@ header{
 .higlights .container{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    width: 920px;
 }
 
 .higlights .container h2{
@@ -309,13 +314,14 @@ header{
     margin: 0 20px;
 }
 
-.container-sponsor .sponsor2 img{
+.container-sponsor .sponsor2{
     display: grid;
     grid-template-columns: repeat(6,1fr);
     margin: 0 5px;
 }
 
 /* Video Part CSS Start */
+
 
 .video-head{
     text-align: center;
