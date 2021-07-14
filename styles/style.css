@@ -1,0 +1,492 @@
+
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+
+/* Common Styles */
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+a,a:hover{
+    text-decoration: none;
+}
+
+ul li{
+    list-style: none;
+}
+
+/* Header Part CSS Start */
+
+nav{
+    margin-bottom: 50px;
+}
+
+header{
+    padding: 0 30px;
+    background-color: rgb(45, 37, 160);
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+
+}
+
+.menu-left{
+    width: 70%;
+    text-align: left;
+}
+
+.menu-right{
+    width:30%;
+    text-align: right;
+}
+
+.navbar ul{
+    display: flex;
+    justify-content: center;
+}
+
+.navbar ul li{
+    list-style: none;
+    margin-right: 30px;
+}
+
+.navbar ul li a{
+    color: #fff;
+    text-decoration: none;
+    list-style: none ;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.navbar ul li:hover a{
+    color: #e95950;
+    transition: linear .4s;
+}
+
+.navbar .logout.menu-right{
+    text-align: right;
+}
+
+.navbar .logout.menu-right a i{
+    color: #fff;
+    margin-right: 5px;
+}
+
+.navbar .logout.menu-right a:hover {
+    color: #e95950;
+    transition: linear .4s;
+} 
+
+.navbar .logout.menu-right a i:hover{
+    color: #e95950;
+    transition: linear .4s
+}
+
+.navbar .logout.menu-right span{
+    margin-left: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.navbar .logout.menu-right span:hover{
+    color: #e95950;
+    transition: linear .4s;
+}
+
+.banner{
+    display: flex;
+    justify-content: center;
+}
+
+.banner .container{
+    display: flex;
+    justify-content: center;
+    /* max-width: 1080px; */
+}
+
+.banner .container h2{
+    color: #fff;
+    font-size: 64px;
+    font-weight: 700;
+}
+
+.banner .container img{
+    width: 556px;
+}
+
+@media (max-width:613px) {
+    .banner .container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        /* max-width: 1080px; */
+    }
+    .banner .container h2{
+        font-size: 20px;
+        font-weight: 700;
+    }
+}
+
+    /* .banner .container img{
+        width: 300px; */
+}
+
+/* .banner .container button.btn{
+    
+} */
+
+.banner .container .btn a {
+    font-size: 16px;
+    color: #fff;
+    margin-right: 8px;
+    padding: 8px 25px;
+    background-color: #E02C6D;
+    border: 3px solid yellow;
+}
+
+.banner .container .btn i{
+    margin-left: 8px;
+}
+
+/* Gallery Parts CSS Start  */
+
+.gallery .gallery-desc{
+    text-align: center;
+    padding: 0 100px;
+}
+
+.gallery .gallery-desc h2{
+    color: blueviolet;
+    font-size: 40px;
+}
+
+@media (max-width:613px) {
+    .gallery .gallery-desc h2{
+        font-size: 20px;
+    }
+    .gallery .gallery-desc p{
+        font-size: 10px;
+    }
+}
+
+.gallery .gallery-desc p{
+    color: rgb(116, 57, 172);
+    font-size: 14px;
+}
+
+.container-gallery{
+    display: flex;
+    justify-content: center;
+}
+
+.player-gallery{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+@media (max-width:613px) {
+    .player-gallery{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.gallery .player{
+    width: 300px;
+    margin: 10px;
+    padding: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.gallery .player img{
+    width: 100%;
+    transition: all linear .5s;
+}
+
+.gallery .player:hover img{
+    transform: scale(1.2);
+}
+
+.gallery .player h2{
+    font-size: 28;
+    font-weight: 700;
+    color: #000;
+}
+
+.gallery .player p {
+    font-size: 16px;
+    color: #6C6C6C;
+}
+
+.higlights {
+    display: flex;
+    justify-content: center;
+}
+
+.higlights .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.higlights .container h2{
+    font-size: 40px;
+    color: #0A0826;
+    font-weight: 700;
+}
+
+.higlights .container p{
+    font-size: 16px;
+    color: #6C6C6C;
+    font-weight: 400;
+}
+
+.higlights .highlights-right img{
+    width: 450px;
+}
+
+/* Sponsor Parts CSS Starts  */
+
+.sponsors{
+    text-align: center;
+}
+
+.container-sponsor {
+    display: flex;
+    justify-content: center;
+}
+
+.sponsors .sponsor-head h2{
+    color: blueviolet;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.container-sponsor img{
+    margin: 0 20px;
+}
+
+.container-sponsor .sponsor2 img{
+    margin: 0 5px;
+}
+
+/* Video Part CSS Start */
+
+.video-head{
+    text-align: center;
+    margin-left: 10px;
+}
+
+.video-head h2 {
+    font-size: 40px;
+    color: blueviolet;
+}
+
+.video-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.video-container .video{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 0 10px;
+    margin: 0 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.video-container .video img{
+    width: 100%;
+    transition: all linear .6s;
+}
+
+i.play-button {
+    position: absolute;
+    top: 43px;
+    left: 117px;
+    font-size: 40px;
+    color: #fff;
+    display: none;
+    transition: linear 6s;
+}
+
+.video-container .video:hover img{
+    transform: scale(1.2);
+}
+
+.video-container .video:hover i.play-button{
+    display: block;
+    transition:all linear 6s;
+    transform: scale(1.2);
+}
+
+.thumb-text {
+    position: absolute;
+    top: 87px;
+    left: 23px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 0px 7px;
+}
+
+.thumb-text i{
+    color: red;
+    margin-right: 3px;
+}
+
+.video-container .video h4 {
+    font-size: 18px;
+    color: red;
+    margin: o;
+    padding: 0;
+    transition:all linear .6s;
+}
+
+.video-container .video h3 {
+    font-size: 18px;
+    color: slateblue;
+    margin: o;
+    padding: 0;
+}
+
+.video-container .video p {
+    font-size: 12px;
+    color: #707070;
+    margin: o;
+    padding: 0;
+}
+
+.video-container .video:hover h4{
+    font-size: 22px;
+}
+
+/* Latest News CSS Part Start  */
+.latest-news{
+    margin-top: 50px;
+}
+
+.latest-news .news-head{
+    text-align: center;
+}
+
+.latest-news .news-head h2{
+    color: blueviolet;
+    font-size: 40px;
+}
+
+.news-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.news{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 10px;
+    padding: 5px 10px;
+    background-color: #FEF8F8;
+    position: relative;
+    cursor: pointer;
+}
+
+.news-img{
+    position: relative;
+}
+
+.news-img .news-overlay {
+    background-color: rgba(0, 0, 0, 0.664);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 95%;
+    transition: all linear .5s;
+}
+
+.news:hover .news-overlay{
+    width: 90%;
+}
+
+.news img {
+    margin-right: 20px;
+}
+
+/* .news p.time {
+    font-size: 9px;
+    font-weight: 700;
+    color: #E31B61;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+ */
+
+ .news p.time {
+    font-size: 9px;
+    font-weight: 700;
+    color: #fff;
+    position: absolute;
+    top: 41%;
+    left: 62px;
+    z-index: 999;
+    display: none;
+}
+
+.news:hover p.time{
+    display: block;
+}
+
+p.text-news{
+    font-size: 12px;
+    font-weight: 700;
+    color: #333333;
+
+}
+
+/* Footer Part CSS Start  */
+footer{
+    text-align: center;
+}
+
+.footer-part{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.footer-part img{
+    width: 300px;
+}
+
+.footer-part i{
+    font-size: 32px;
+    color: #969BAB;
+    margin-right: 15px;
+}
+
+.footer-part i.fa-facebook-f:hover {
+    color: #4267B2;
+    transition: linear .4s;
+}
+
+.footer-part i.fa-twitter:hover{
+    color: #00acee;
+    transition: linear .4s;
+}
+
+.footer-part i.fa-instagram-square:hover{
+    color: #e95950;
+    transition: linear .4s;
+}
+
+.footer-part i.fa-youtube:hover{
+    color: #c4302b;
+    transition: linear .4s;
+}
+
+.copy{
+    margin-top: 5px;
+}
